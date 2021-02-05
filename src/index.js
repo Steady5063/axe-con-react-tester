@@ -7,7 +7,7 @@ import Header from "./components/header";
 import shop from "./pages/shop";
 import details from "./pages/details";
 import cart from "./pages/cart";
-
+import about from "./pages/about";
 import home from "./pages/home";
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
           <Route path="/shop" component={shop} />
           <Route path="/cart" component={cart} />
           <Route path="/details" component={details} />
+          <Route path="/about" component={about} />
       </Router>
       <Footer />
     </div>

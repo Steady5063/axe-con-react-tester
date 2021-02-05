@@ -1,14 +1,12 @@
 body {
   margin: 0;
 }
-
 img{
   height:100px;
-  width: 600px;
+  width: 850px;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-
 .App {
   font-family: sans-serif;
   text-align: left;
@@ -22,17 +20,16 @@ img{
   width: 100%;
   margin-left: auto;
     margin-right: auto;
-    padding-top: 1rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     max-width: 48rem;
 }
 
 .navbar {
   text-align: center;
-  height: 115px;
-  max-width: 48rem;
+  max-width: 46rem;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 footer {
@@ -95,10 +92,10 @@ li{
 
 
 .btn.btn-primary {
-  background-color: #006dcc;
-  border-color: #0c69ae;
+  background-color: #027d47;
+  border-color:  #069457;
   text-shadow: 0 1px 0 #03497d;
-  margin: 2px;
+  text-decoration: none!important;
 }
 .btn {
   font-weight: bold;
@@ -146,11 +143,31 @@ label {
 
 
 h1 {
-  font-size: 30px;
+  font-size: 0px;
   margin-bottom:0px;
 }
 h2 {
   font-size: 22px;
+}
+h4{
+  font-size: 15px;
+  color:white;
+}
+
+h5{
+  font-size: 15px;
+  color:white;
+  width:100%
+}
+
+label{
+  color:white;
+  font-size:15px;
+}
+
+.row{
+  width:100%;
+  padding-top: 50px;
 }
 
 .logo {
@@ -164,7 +181,7 @@ h2 {
 }
 
 .glow {
-  font-size: 80px;
+  font-size: 73px;
   color: #fff;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -208,6 +225,7 @@ ul.horizontal {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  height: 45px;
 }
 
 ul.horizontal li {
@@ -219,4 +237,49 @@ ul.horizontal li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.active{
+  background-color: rgba(33, 33, 33);
+}
+
+.total{
+  float:right;
+}
+.stockImage{
+  width: 100px;
+  height: 75px;
+  padding: 10px 10px 10px 10px;
+}
+.imageContainer{
+  float:left;
+  padding-right: 25px;
+}
+
+.aboutImage {
+    height: 150px;
+    width: 150px;
+    float: left;
+    padding-left: 15px;
+}
+.cartItem{
+  border: none!important
+}
+
+
+.listing{
+  border: 1px solid white;
+  height: 100px;
+}
+
+.listing p{
+  font-size:10px;
+  color: white;
+}
+
+.listingButton{
+  float: right;
+  padding: 8px;
+  margin-top: -31px;
+  margin-right: 10px;
 }

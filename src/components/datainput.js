@@ -1,0 +1,16 @@
+import React, { Fragment } from "react";
+
+class SaberButton extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    render() {
+      return (   
+    <Fragment>
+        <label for='dataInput' >{this.props.inputLabel}</label> 
+        <input type={this.props.inputType} class="form-control" id="dataInput"/>
+     </Fragment>
+      );
+    }
+  }
+export default SaberButton;

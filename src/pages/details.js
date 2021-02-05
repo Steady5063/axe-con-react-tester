@@ -1,17 +1,20 @@
 import React, { Component } from "react";
 import DocumentTitle from "react-document-title";
-class PageTitle extends Component {
+import TopHeading from "../components/topHeading"
+class Details extends Component {
   render() {
     return (
       <DocumentTitle title="Title Fixes Page">
-        <div>
-          <h1>Page Title Fixes</h1>
-          <h2>React-Document-Title</h2>
-       </div>
+      <div class="main">
+      <TopHeading headingText="Saber Details"/>
+      <p>
+        The galaxy has made it very difficult to purchase and buy the things you need for proper light saber completion. 
+      </p>
+      </div>
       </DocumentTitle>
     );
   }
 
 
 }
-export default PageTitle;
+export default Details;
