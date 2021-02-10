@@ -2,7 +2,7 @@ import React from "react";
 import TopHeading from "../components/topHeading"
 import SaberButton from "../components/button";
 const Home = () => (
-  <div class="main">
+  <div className="main">
     <TopHeading headingText="Light Saber Imporium"/>
     <p>
       The galaxy has made it very difficult to purchase and buy the things you need for proper light saber completion. 

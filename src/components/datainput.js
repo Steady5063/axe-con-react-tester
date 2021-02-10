@@ -7,9 +7,9 @@ class SaberButton extends React.Component {
     render() {
       return (   
     <Fragment>
-        <label for='dataInput' >{this.props.inputLabel}</label> 
-        <input type={this.props.inputType} class="form-control" id="dataInput"/>
-     </Fragment>
+        <label htmlFor='dataInput' >{this.props.inputLabel}</label> 
+        <input type={this.props.inputType} className="form-control" id="dataInput"/>
+    </Fragment>
       );
     }
   }

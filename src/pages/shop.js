@@ -7,7 +7,7 @@ class Shop extends Component {
   }
   render() {
     return (
-      <div class="main">
+      <div className="main">
       <TopHeading headingText="Shop"/>
       <p>
         The galaxy has made it very difficult to purchase and buy the things you need for proper light saber completion. 

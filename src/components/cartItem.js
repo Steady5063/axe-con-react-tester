@@ -7,18 +7,18 @@ class CartItem extends React.Component {
   //TODO: ADD CSS FOR DIFFERENT BUTTON TYPES
     render() {
       return (    
-       <div class="listing cartItem">  
-        <div class="imageContainer">
-            <img class="stockImage" src={this.props.imageSrc}/>
+       <div className="listing cartItem">  
+        <div className="imageContainer">
+            <img className="stockImage" src={this.props.imageSrc}/>
         </div>
-        <div class="details">
+        <div className="details" role="data">
             <h4>{this.props.saberName}</h4>
             <p>This light saber has been made by Mace Windu himself for protecting the republic</p>
             <p>Price: 15000 Credits</p>
-            <a class="cartLink" href="/details">Details</a>
-            <a class="cartLink" href="#">Buy again</a>
-        <div class="details">
-             <a href="#" class="listingButton btn btn-primary">Remove from cart</a>
+            <a className="cartLink" href="/details">Details</a>
+            <a className="cartLink">Buy again</a>
+        <div className="details">
+             <a href="#" className="listingButton btn btn-primary">Remove from cart</a>
         </div>
        </div>
     </div>

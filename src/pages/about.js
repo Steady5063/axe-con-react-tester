@@ -3,14 +3,14 @@ import TopHeading from "../components/topHeading"
 class About extends Component {
   render() {
     return (
-      <div class="main">
+      <div className="main">
       <TopHeading headingText="About"/>
       <p>
         The Saber Imporium is dedicated to bringing you only the finest in all the galaxy. 
       </p>
 
       <p>
-      <img class="aboutImage" src="https://lumiere-a.akamaihd.net/v1/images/jedi-youngling_0ee1eee6.jpeg?region=114%2C0%2C1332%2C666" alt="Children of the force learning with master yoda"/>
+      <img className="aboutImage" src="https://lumiere-a.akamaihd.net/v1/images/jedi-youngling_0ee1eee6.jpeg?region=114%2C0%2C1332%2C666" alt="Children of the force learning with master yoda"/>
         We were created to help give those who are force sensitive a chance to test out there abilities and to train even more. Whether you are a jedi or not. 
       </p>
       <p>

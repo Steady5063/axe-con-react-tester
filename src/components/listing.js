@@ -7,19 +7,19 @@ class Listing extends React.Component {
   //TODO: ADD CSS FOR DIFFERENT BUTTON TYPES
     render() {
       return (    
-       <div class="listing">
+       <div className="listing">
         
-        <div class="imageContainer">
-            <img class="stockImage" src={this.props.imageSrc}/>
+        <div className="imageContainer">
+            <img className="stockImage" src={this.props.imageSrc}/>
         </div>
-        <div class="details">
+        <div className="details">
             <h4>{this.props.saberName}</h4>
             <p>{this.props.saberDetails}</p>
 
         </div>
-        <div class="details">
-            <a href="/details" class="listingButton btn btn-primary">More Details</a>
-            <a href="/cart"    class="listingButton btn btn-primary">Add to Cart</a>
+        <div className="details">
+            <a href="/details" className="listingButton btn btn-primary">More Details</a>
+            <a href="/cart"    className="listingButton btn btn-primary">Add to Cart</a>
             </div>
        </div>
       );
