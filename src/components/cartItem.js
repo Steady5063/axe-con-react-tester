@@ -1,10 +1,9 @@
 import React, { Fragment } from "react";
-
+//Incorrect ARIA role, Image alt
 class CartItem extends React.Component {
     constructor(props) {
       super(props);
     }
-  //TODO: ADD CSS FOR DIFFERENT BUTTON TYPES
     render() {
       return (    
        <div className="listing cartItem">  
@@ -16,7 +15,7 @@ class CartItem extends React.Component {
             <p>This light saber has been made by Mace Windu himself for protecting the republic</p>
             <p>Price: 15000 Credits</p>
             <a className="cartLink" href="/details">Details</a>
-            <a className="cartLink">Buy again</a>
+            <a className="cartLink" href="#">Buy again</a>
         <div className="details">
              <a href="#" className="listingButton btn btn-primary">Remove from cart</a>
         </div>

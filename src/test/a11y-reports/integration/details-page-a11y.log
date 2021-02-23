@@ -1,0 +1,205 @@
+Report Date: Tue Feb 23 2021 07:15:08 GMT-0600 (Central Standard Time)
+
+Expected the HTML found at $('h5') to have no violations:
+
+Issue Description:Required ARIA attributes must be provided (aria-required-attr)HTML:
+
+<h5 role="heading">Contact Us</h5>
+
+Fix any of the following:
+  Required ARIA attribute not present: aria-level
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/3.5/aria-required-attr?application=webdriverjs
+
+
+
+-------------------------------------------------------------
+
+Expected the HTML found at $('#exampleEmail') to have no violations:
+
+Issue Description:Elements must have sufficient color contrast (color-contrast)HTML:
+
+<input type="email" class="form-control" id="exampleEmail">
+
+Fix any of the following:
+  Element has insufficient color contrast of 1.24 (foreground color: #d1d2d2, background color: #bdbdbd, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/3.5/color-contrast?application=webdriverjs
+
+
+
+Expected the HTML found at $('#exampleMessage') to have no violations:
+
+Issue Description:Elements must have sufficient color contrast (color-contrast)HTML:
+
+<textarea class="form-control" id="exampleMessage"></textarea>
+
+Fix any of the following:
+  Element has insufficient color contrast of 1.24 (foreground color: #d1d2d2, background color: #bdbdbd, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/3.5/color-contrast?application=webdriverjs
+
+
+
+-------------------------------------------------------------
+
+Expected the HTML found at $('h5') to have no violations:
+
+Issue Description:Heading levels should only increase by one (heading-order)HTML:
+
+<h5 role="heading">Contact Us</h5>
+
+Fix any of the following:
+  Heading order invalid
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/3.5/heading-order?application=webdriverjs
+
+
+
+-------------------------------------------------------------
+
+Expected the HTML found at $('img') to have no violations:
+
+Issue Description:Images must have alternate text (image-alt)HTML:
+
+<img src="/static/media/lightsaber.d5d0fb8a.png">
+
+Fix any of the following:
+  Element does not have an alt attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute or the title attribute is empty
+  Element's default semantics were not overridden with role="presentation"
+  Element's default semantics were not overridden with role="none"
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/3.5/image-alt?application=webdriverjs
+
+
+
+-------------------------------------------------------------
+
+Expected the HTML found at $('#exampleEmail') to have no violations:
+
+Issue Description:Form elements must have labels (label)HTML:
+
+<input type="email" class="form-control" id="exampleEmail">
+
+Fix any of the following:
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Form element does not have an implicit (wrapped) <label>
+  Form element does not have an explicit <label>
+  Element has no title attribute or the title attribute is empty
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/3.5/label?application=webdriverjs
+
+
+
+Expected the HTML found at $('#exampleMessage') to have no violations:
+
+Issue Description:Form elements must have labels (label)HTML:
+
+<textarea class="form-control" id="exampleMessage"></textarea>
+
+Fix any of the following:
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Form element does not have an implicit (wrapped) <label>
+  Form element does not have an explicit <label>
+  Element has no title attribute or the title attribute is empty
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/3.5/label?application=webdriverjs
+
+
+
+-------------------------------------------------------------
+
+Expected the HTML found at $('html') to have no violations:
+
+Issue Description:Document must have one main landmark (landmark-one-main)HTML:
+
+<html lang="en">
+
+Fix all of the following:
+  Document does not have a main landmark
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/3.5/landmark-one-main?application=webdriverjs
+
+
+
+-------------------------------------------------------------
+
+Expected the HTML found at $('ul[data-testid="footList"]') to have no violations:
+
+Issue Description:<ul> and <ol> must only directly contain <li>, <script> or <template> elements (list)HTML:
+
+<ul class="list-unstyled" data-testid="footList"><hr><li><a href="">Sabers</a></li><li><a href="">Blades</a></li><li><a href="">Kyber Crystals</a></li><li><a href="">Colors</a></li></ul>
+
+Fix all of the following:
+  List element has direct children that are not allowed inside <li> elements
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/3.5/list?application=webdriverjs
+
+
+
+Expected the HTML found at $('.col-6:nth-child(2) > .list-unstyled') to have no violations:
+
+Issue Description:<ul> and <ol> must only directly contain <li>, <script> or <template> elements (list)HTML:
+
+<ul class="list-unstyled"><hr><li><a href="">Documentation</a></li><li><a href="">Support</a></li><li><a href="">Legal Terms</a></li><li><a href="">About</a></li></ul>
+
+Fix all of the following:
+  List element has direct children that are not allowed inside <li> elements
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/3.5/list?application=webdriverjs
+
+
+
+-------------------------------------------------------------
+
+Expected the HTML found at $('.main') to have no violations:
+
+Issue Description:All page content must be contained by landmarks (region)HTML:
+
+<div class="main"><h1 class="glow">Saber Details</h1><img src="/static/media/lightsaber.d5d0fb8a.png"><p>The galaxy has made it very difficult to purchase and buy the things you need for proper light saber completion.</p></div>
+
+Fix any of the following:
+  Some page content is not contained by landmarks
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/3.5/region?application=webdriverjs
+
+HTML found at $('h5') needs to be reviewed:
+
+Issue Description:Elements must have sufficient color contrast (color-contrast)HTML:<h5 role="heading">Contact Us</h5>
+
+Fix any of the following:
+  Element's background color could not be determined because it is overlapped by another element
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/3.5/color-contrast?application=webdriverjs
+
+
+
+-------------------------------------------------------------
+
+HTML found at $('#about') needs to be reviewed:
+
+Issue Description:Links with the same name have a similar purpose (identical-links-same-purpose)HTML:<a id="about" href="/About">About</a>
+
+Fix all of the following:
+  Check that links have the same purpose, or are intentionally ambiguous.
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/3.5/identical-links-same-purpose?application=webdriverjs
+

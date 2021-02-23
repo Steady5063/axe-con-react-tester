@@ -1,0 +1,18 @@
+Report Date: Tue Feb 23 2021 07:14:15 GMT-0600 (Central Standard Time)
+
+Expected the HTML found at $('img') to have no violations:
+
+Issue Description:Images must have alternate text (image-alt)HTML:
+
+<img class="stockImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp9YhBNQ4XN66hz6MWTvvimIAiK6Dr2BEsjA3raLs7f7u7XoPEZbm8AoqQgw&amp;usqp=CAc">
+
+Fix any of the following:
+  Element does not have an alt attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element's default semantics were not overridden with role="none" or role="presentation"
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/4.1/image-alt?application=axeAPI
+

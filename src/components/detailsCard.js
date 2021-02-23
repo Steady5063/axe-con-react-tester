@@ -9,12 +9,12 @@ class DetailsCard extends React.Component {
       return (    
        <div class="listing">  
         <div class="imageContainer">
-            <img class="stockImage" src={this.props.imageSrc}/>
+            <img alt="" class="stockImage" src={this.props.imageSrc}/>
         </div>
         <div class="details">
             <h4>{this.props.saberName}</h4>
         <div class="details">
-        <a href="/cart"    class="listingButton btn btn-primary">Add to Cart</a>
+        <a href="/cart" class="listingButton btn btn-primary">Add to Cart</a>
         </div>
        </div>
     </div>

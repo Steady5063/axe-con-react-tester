@@ -1,9 +1,9 @@
 import React from "react";
-
+//Example for Component testing, Listing Styling, htmlFor for the label;
 const Footer = () => (
   <footer role="contentinfo">
         <div className="col-6">
-                        <ul className="list-unstyled">
+                        <ul className="list-unstyled" data-testid="footList">
                             <hr/>
                             <li><a href="">Sabers</a></li>
                             <li><a href="">Blades</a></li>
@@ -12,7 +12,7 @@ const Footer = () => (
                         </ul>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-6" >
                         <ul className="list-unstyled">
                             <hr/>
                             <li><a href="">Documentation</a></li>
@@ -23,9 +23,11 @@ const Footer = () => (
                     </div>
         
             <div className="col-5">
-                <h5>Contact Us</h5>
+                <h5 role="heading">Contact Us</h5>
                 <form>
-                        <input type="email" className="form-control" id="exampleInputEmail1"/>
+                        <label >Email:</label>
+                        <input type="email" className="form-control" id="exampleEmail"/>
+                        <label >Message:</label>
                         <textarea className="form-control" id="exampleMessage" ></textarea>
                 </form>
         

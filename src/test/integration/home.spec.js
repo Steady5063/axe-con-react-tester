@@ -1,11 +1,11 @@
 const AxeBuilder = require("axe-webdriverjs");
 const selenium = require("selenium-webdriver");
-const { By } = require("selenium-webdriver")
+const { By } = require("selenium-webdriver");
 const reportViolations = require("../utils/axe-logger");
-const reportPath = process.cwd()+ "/src/test/a11y-reports/integration/about-page-a11y.log";
+const reportPath = process.cwd()+ "/src/test/a11y-reports/home/home-page-a11y.log";
 import "babel-polyfill"
 
-describe("About page", () => {
+describe("Home page", () => {
   let axeDriver;
   let driver;
 
@@ -21,7 +21,7 @@ describe("About page", () => {
   });
 
   test("is accessible", async () => {
-    await driver.get("http://localhost:3000/about");
+    await driver.get("http://localhost:3000/home");
     const results = await axeDriver.analyze();
     reportViolations(results, reportPath);
     expect(results.violations.length).toBe(0);

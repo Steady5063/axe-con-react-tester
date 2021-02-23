@@ -7,8 +7,8 @@ class SaberButton extends React.Component {
     render() {
       return (   
     <Fragment>
-        <label htmlFor='dataInput' >{this.props.inputLabel}</label> 
-        <input type={this.props.inputType} className="form-control" id="dataInput"/>
+        <label id="dataInputLabel" >{this.props.inputLabel}</label> 
+        <input type={this.props.inputType} aria-labelledby="dataInputLabel" className="form-control" id="dataInput"/>
     </Fragment>
       );
     }

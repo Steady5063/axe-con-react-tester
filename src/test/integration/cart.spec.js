@@ -1,11 +1,11 @@
 const AxeBuilder = require("axe-webdriverjs");
 const selenium = require("selenium-webdriver");
-const { By } = require("selenium-webdriver")
+const { By } = require("selenium-webdriver");
 const reportViolations = require("../utils/axe-logger");
-const reportPath = process.cwd()+ "/src/test/a11y-reports/integration/about-page-a11y.log";
+const reportPath = process.cwd()+ "/src/test/a11y-reports/integration/cart-page-a11y.log";
 import "babel-polyfill"
 
-describe("About page", () => {
+describe("Cart page", () => {
   let axeDriver;
   let driver;
 
@@ -21,9 +21,9 @@ describe("About page", () => {
   });
 
   test("is accessible", async () => {
-    await driver.get("http://localhost:3000/about");
+    await driver.get("http://localhost:3000/cart");
     const results = await axeDriver.analyze();
-    reportViolations(results, reportPath);
+    reportViolations(result, reportPath);
     expect(results.violations.length).toBe(0);
   });
 

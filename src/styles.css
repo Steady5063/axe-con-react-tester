@@ -163,6 +163,7 @@ h5{
 label{
   color:white;
   font-size:15px;
+  float:left;
 }
 
 .row{
@@ -283,3 +284,16 @@ ul.horizontal li a {
   margin-top: -31px;
   margin-right: 10px;
 }
+
+.cartLink{
+  text-decoration: none;
+  color:white;
+  padding-right:10px;
+}
+/*
+.cartLink:focus{
+  text-decoration: none;
+  color:green;
+  padding-right:10px;
+}
+*/
