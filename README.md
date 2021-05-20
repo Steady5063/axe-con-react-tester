@@ -17,6 +17,7 @@ axe-con-react-tester
         └───component
         └───integration
         └───utils (where the customer reporter lives)
+``` 
 
 ## Component Testing
 
