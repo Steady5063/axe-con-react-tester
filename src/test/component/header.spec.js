@@ -9,10 +9,6 @@ import "babel-polyfill"
 
 describe('Header Component', () => {
 
-afterAll(async (done)  => {
-  done();
-});
-
 
 test('Accessibility check', done => {
  const {container} = render(<Header/>);

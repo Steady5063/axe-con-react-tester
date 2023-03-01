@@ -1,4 +1,4 @@
-Report Date: Tue Feb 23 2021 07:15:09 GMT-0600 (Central Standard Time)
+Report Date: Wed Mar 01 2023 07:38:22 GMT-0600 (Central Standard Time)
 
 Expected the HTML found at $('h5') to have no violations:
 
@@ -96,7 +96,7 @@ Expected the HTML found at $('.main > img') to have no violations:
 
 Issue Description:Images must have alternate text (image-alt)HTML:
 
-<img src="/static/media/lightsaber.d5d0fb8a.png">
+<img src="/static/media/lightsaber.d5d0fb8a56521563e813.png">
 
 Fix any of the following:
   Element does not have an alt attribute

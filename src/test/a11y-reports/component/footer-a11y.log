@@ -1,4 +1,4 @@
-Report Date: Tue Feb 23 2021 07:14:15 GMT-0600 (Central Standard Time)
+Report Date: Wed Mar 01 2023 08:22:16 GMT-0600 (Central Standard Time)
 
 Expected the HTML found at $('#exampleEmail') to have no violations:
 
@@ -7,16 +7,16 @@ Issue Description:Form elements must have labels (label)HTML:
 <input type="email" class="form-control" id="exampleEmail">
 
 Fix any of the following:
-  aria-label attribute does not exist or is empty
-  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
   Form element does not have an implicit (wrapped) <label>
   Form element does not have an explicit <label>
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
   Element has no title attribute
   Element has no placeholder attribute
   Element's default semantics were not overridden with role="none" or role="presentation"
 
 You can find more information on this issue here: 
-https://dequeuniversity.com/rules/axe/4.1/label?application=axeAPI
+https://dequeuniversity.com/rules/axe/4.6/label?application=axeAPI
 
 
 
@@ -27,16 +27,16 @@ Issue Description:Form elements must have labels (label)HTML:
 <textarea class="form-control" id="exampleMessage"></textarea>
 
 Fix any of the following:
-  aria-label attribute does not exist or is empty
-  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
   Form element does not have an implicit (wrapped) <label>
   Form element does not have an explicit <label>
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
   Element has no title attribute
   Element has no placeholder attribute
   Element's default semantics were not overridden with role="none" or role="presentation"
 
 You can find more information on this issue here: 
-https://dequeuniversity.com/rules/axe/4.1/label?application=axeAPI
+https://dequeuniversity.com/rules/axe/4.6/label?application=axeAPI
 
 
 
@@ -49,10 +49,10 @@ Issue Description:<ul> and <ol> must only directly contain <li>, <script> or <te
 <ul class="list-unstyled" data-testid="footList"><hr><li><a href="">Sabers</a></li><li><a href="">Blades</a></li><li><a href="">Kyber Crystals</a></li><li><a href="">Colors</a></li></ul>
 
 Fix all of the following:
-  List element has direct children that are not allowed inside <li> elements
+  List element has direct children that are not allowed: hr
 
 You can find more information on this issue here: 
-https://dequeuniversity.com/rules/axe/4.1/list?application=axeAPI
+https://dequeuniversity.com/rules/axe/4.6/list?application=axeAPI
 
 
 
@@ -63,8 +63,8 @@ Issue Description:<ul> and <ol> must only directly contain <li>, <script> or <te
 <ul class="list-unstyled"><hr><li><a href="">Documentation</a></li><li><a href="">Support</a></li><li><a href="">Legal Terms</a></li><li><a href="">About</a></li></ul>
 
 Fix all of the following:
-  List element has direct children that are not allowed inside <li> elements
+  List element has direct children that are not allowed: hr
 
 You can find more information on this issue here: 
-https://dequeuniversity.com/rules/axe/4.1/list?application=axeAPI
+https://dequeuniversity.com/rules/axe/4.6/list?application=axeAPI
 

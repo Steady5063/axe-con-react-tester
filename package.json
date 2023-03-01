@@ -14,17 +14,17 @@
     "@testing-library/react": "^11.2.3",
     "axe-core": "^4.1.1",
     "axe-webdriverjs": "^2.3.0",
-    "jest": "^26.6.0",
+    "canvas": "^2.11.0",
+    "jest": "^28.1.3",
     "react": "^17.0.1",
-    "react-a11y-announcer": "^2.1.0",
     "react-alert": "^7.0.2",
     "react-document-title": "^2.0.3",
     "react-dom": "^17.0.1",
     "react-modal": "^3.12.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.1",
+    "react-scripts": "^5.0.1",
     "react-transition-group": "^4.4.1",
-    "selenium-webdriver": "^4.0.0-alpha.8"
+    "selenium-webdriver": "^4.8.1"
   },
   "devDependencies": {
     "babel-core": "^6.0.20",
@@ -34,15 +34,19 @@
     "babel-preset-es2015": "^6.0.15",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.0.15",
-    "concurrently": "^5.3.0"
+    "concurrently": "^7.6.0",
+    "jest-environment-jsdom": "^28.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test:functional": "jest **/test/component/*.spec.js",
-    "test:integration": "concurrently \"npm run start\" \"jest **/test/integration/*.spec.js\"",
-    "test": "jest **/test/integration/about.spec.js",
+    "test:functional": "jest ./component",
+    "test:integration": "jest ./integration",
+    "test": "jest ./integration/about.spec.js",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   },
   "browserslist": [
     ">0.2%",

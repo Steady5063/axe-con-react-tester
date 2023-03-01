@@ -9,10 +9,6 @@ import "babel-polyfill"
 
 describe('Cart Item Component', () => {
 
-afterAll(async (done)  => {
-  done();
-});
-
 
 test('Accessibility check', done => {
  const {container, baseElement} = render(<CartItem saberName="Windu Saber"/>);

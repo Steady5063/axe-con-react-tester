@@ -3,7 +3,7 @@ import TopHeading from "../components/topHeading"
 import SaberButton from "../components/button";
 const Home = () => (
   <div className="main">
-    <TopHeading headingText="Light Saber Imporium"/>
+    <TopHeading headingText="Light Saber Emporium"/>
     <p>
       The galaxy has made it very difficult to purchase and buy the things you need for proper light saber completion. 
     </p>

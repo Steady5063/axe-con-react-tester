@@ -9,11 +9,10 @@ import "babel-polyfill"
 
 describe('Button Component', () => {
 
-afterAll(async (done)  => {
-  done();
-});
 
-
+/**
+ * @jest-environment jsdom
+ */
 test('Accessibility check', (done) => {
  const {container} = render(<SaberButton buttonType="primary" buttonText="Click me" ></SaberButton>);
  axe.run(container).then(results => {
