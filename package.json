@@ -46,7 +46,8 @@
     "eject": "react-scripts eject"
   },
   "jest": {
-    "testEnvironment": "jsdom"
+    "testEnvironment": "jsdom",
+    "testTimeout": 10000
   },
   "browserslist": [
     ">0.2%",

@@ -4,11 +4,9 @@ body {
 img{
   height:100px;
   width: 850px;
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 .App {
-  font-family: sans-serif;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -184,8 +182,6 @@ label{
 .glow {
   font-size: 73px;
   color: #fff;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
   text-shadow: .5px .5px 3px rgb(14, 143, 14), 0 0 15px rgb(2, 89, 2), 0 0 5px rgb(3, 186, 3);
   float: left;
