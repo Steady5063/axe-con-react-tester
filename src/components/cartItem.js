@@ -9,6 +9,7 @@ class CartItem extends React.Component {
        <div className="listing cartItem">  
         <div className="imageContainer">
             <img className="stockImage" src={this.props.imageSrc}/>
+            <span>Testers</span>
         </div>
         <div className="details" role="data">
             <h4>{this.props.saberName}</h4>
