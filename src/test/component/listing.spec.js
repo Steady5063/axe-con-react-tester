@@ -20,7 +20,7 @@ describe('Listing Component', () => {
     );
   })
  
-  test("Listing Details Check", () => {
+  test("Functionality - Listing Details Check", () => {
     expect(screen.getByTestId("saberName")).not.toEqual(null);
     expect(screen.getByTestId("saberName")).toHaveTextContent("Windu Saber");
   });

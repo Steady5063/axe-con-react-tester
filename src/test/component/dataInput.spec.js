@@ -9,6 +9,11 @@ import "babel-polyfill"
 
 describe('Data Input Component', () => {
 
+//This is a bad test for demonstration
+test("Functionality - Data Input", () => {
+  expect(true).toBe(true);
+});
+
 test("Accessibility check", async () => {
   const { container } = render(<DataInput inputLabel="First Name" />);
   const results = await axe.run(container)

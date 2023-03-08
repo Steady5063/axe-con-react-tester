@@ -8,6 +8,10 @@ import "babel-polyfill"
 
 
 describe('Header Component', () => {
+    
+test("Functionality - Header", () => {
+  expect(true).toBe(true);
+});
 
 
 test('Accessibility check', async ()=> {

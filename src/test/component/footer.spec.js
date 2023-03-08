@@ -10,12 +10,12 @@ import "babel-polyfill"
 
 describe('Footer Component', () => {
 
-  test("Component has loaded", () => {
+  test("Funtionality - Component has loaded", () => {
     render(<Footer />);
     expect(screen.getByRole("heading")).toHaveTextContent("Contact Us");
   });
 
-  test("List number", () => {
+  test("Functionality - List number", () => {
     render(<Footer />);
     expect(screen.getByTestId("footList")).not.toEqual(null);
     expect(screen.getByTestId("footList").childElementCount).toBe(5);

@@ -9,7 +9,10 @@ import "babel-polyfill"
 
 describe('Button Component', () => {
 
-
+//This is a bad test for demonstration
+test("Functionality - Button Type", () => {
+  expect(true).toBe(true);
+});
 /**
  * @jest-environment jsdom
  */

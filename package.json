@@ -39,7 +39,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test:functional": "jest ./component",
+    "test:functional": "jest ./component -t \"Functionality\"",
+    "test:a11y": "jest ./component -t \"Accessibility\"",
     "test:integration": "jest ./integration",
     "test": "jest ./integration/about.spec.js",
     "eject": "react-scripts eject"

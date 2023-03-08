@@ -1,6 +1,38 @@
-Report Date: Wed Mar 08 2023 06:36:37 GMT-0600 (Central Standard Time)
+Report Date: Wed Mar 08 2023 06:56:42 GMT-0600 (Central Standard Time)
 
-Expected the HTML found at $('img') to have no violations:
+Expected the HTML found at $('div:nth-child(2) > .listing > .details:nth-child(3) > a[href$="cart"]') to have no violations:
+
+Issue Description:IDs of active elements must be unique (duplicate-id-active)HTML:
+
+<a href="/cart" id="addCart" class="listingButton btn btn-primary">Add to Cart</a>
+
+Fix any of the following:
+  Document has active elements with the same id attribute: addCart
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/4.6/duplicate-id-active?application=axeAPI
+
+
+
+-------------------------------------------------------------
+
+Expected the HTML found at $('div:nth-child(2) > .listing > .details:nth-child(3) > a:nth-child(1)') to have no violations:
+
+Issue Description:id attribute value must be unique (duplicate-id)HTML:
+
+<a id="moreDets" class="listingButton btn btn-primary">More Details</a>
+
+Fix any of the following:
+  Document has multiple static elements with the same id attribute: moreDets
+
+You can find more information on this issue here: 
+https://dequeuniversity.com/rules/axe/4.6/duplicate-id?application=axeAPI
+
+
+
+-------------------------------------------------------------
+
+Expected the HTML found at $('div:nth-child(2) > .listing > .imageContainer > img') to have no violations:
 
 Issue Description:Images must have alternate text (image-alt)HTML:
 
