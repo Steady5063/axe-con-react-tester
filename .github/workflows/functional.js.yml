@@ -1,4 +1,4 @@
-name: Axe
+name: func_tests
 
 on:
   push:
@@ -23,4 +23,4 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: npm run build --if-present
-      - run: npm run test:a11y
+      - run: npm run test:functional
