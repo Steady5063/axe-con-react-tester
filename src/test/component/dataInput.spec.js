@@ -9,13 +9,11 @@ import "babel-polyfill"
 
 describe('Data Input Component', () => {
 
-test("Accessibility check", (done) => {
+test("Accessibility check", async () => {
   const { container } = render(<DataInput inputLabel="First Name" />);
-  axe.run(container).then((results) => {
-    reportViolations(results, reportPath);
-    expect(results.violations.length).toBe(0);
-    done();
-  });
+  const results = await axe.run(container)
+  reportViolations(results, reportPath);
+  expect(results.violations.length).toBe(0);
 });
 
 });

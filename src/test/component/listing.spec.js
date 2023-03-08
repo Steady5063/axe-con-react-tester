@@ -25,7 +25,7 @@ describe('Listing Component', () => {
     expect(screen.getByTestId("saberName")).toHaveTextContent("Windu Saber");
   });
 
-  test("Accessibility check", (done) => {
+  test("Accessibility check", async () => {
     const { container } = render(
       <Listing
         saberName="Windu Saber"
@@ -33,11 +33,9 @@ describe('Listing Component', () => {
         imageSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp9YhBNQ4XN66hz6MWTvvimIAiK6Dr2BEsjA3raLs7f7u7XoPEZbm8AoqQgw&usqp=CAc"
       />
     );
-    axe.run(container).then((results) => {
-      reportViolations(results, reportPath);
-      expect(results.violations.length).toBe(0);
-      done();
-    });
+    const results = await axe.run(container);
+    reportViolations(results, reportPath);
+    expect(results.violations.length).toBe(0);
   });
 
 });

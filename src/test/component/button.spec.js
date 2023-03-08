@@ -13,14 +13,11 @@ describe('Button Component', () => {
 /**
  * @jest-environment jsdom
  */
-test('Accessibility check', (done) => {
+test('Accessibility check', async () => {
  const {container} = render(<SaberButton buttonType="primary" buttonText="Click me" ></SaberButton>);
- axe.run(container).then(results => {
-    reportViolations(results, reportPath);
-    expect(results.violations.length).toBe(0);
-    done();
- });
-
+ const results = await axe.run(container)
+ reportViolations(results, reportPath);
+ expect(results.violations.length).toBe(0);
  });
 
 });
