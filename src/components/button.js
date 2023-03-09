@@ -8,7 +8,7 @@ class SaberButton extends React.Component {
     render() {
       return (    
         <div>
-        <button className={this.props.buttonType}>{this.props.buttonText}</button>
+        <button aria-describedby={this.props.buttonType} className={this.props.buttonType}>{this.props.buttonText}</button>
         <span>Helper text</span>
         </div>
       );
