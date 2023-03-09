@@ -1,4 +1,4 @@
-name: func_tests
+name: UI_test
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [master]
 
 jobs:
-  axe:
+  func_test:
     runs-on: ubuntu-latest
 
     strategy:
