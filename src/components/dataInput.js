@@ -9,7 +9,7 @@ class SaberButton extends React.Component {
     <Fragment>
         <label id="dataInputLabel" >{this.props.inputLabel}</label> 
         <input type={this.props.inputType} aria-labelledby="dataInputLabel" className="form-control" id="dataInput"/>
-    </Fragment>
+    </Fragment> 
       );
     }
   }
